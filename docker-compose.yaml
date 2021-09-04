@@ -1,0 +1,9 @@
+services:
+  deno-app:
+    build: ./deno-rest-api
+    restart: always
+  nginx:
+    build: ./nginx
+    restart: always
+    ports:
+      - 80:80
